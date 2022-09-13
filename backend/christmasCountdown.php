@@ -12,5 +12,5 @@
 // turn the returned value to JSON then decode it to be able to access the values
 $json = json_encode(findDaysToChristmas());
 $daysLeft = json_decode($json, true)["days"];
-echo "$daysLeft Days left to Christmas!";
+echo json_encode($daysLeft);
 ?>

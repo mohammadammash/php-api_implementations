@@ -17,8 +17,8 @@ function isPalindrome($str)
 
 $text = $_GET['text'];
 if (isPalindrome(($text))) {
-    echo "${text} is Palindrome :)";
+    echo json_encode("${text} is Palindrome :)");
 } else {
-    echo "${text} is not Palindrome :(";
+    echo json_encode("${text} is not Palindrome :(");
 }
 ?>
